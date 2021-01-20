@@ -1,0 +1,82 @@
+th, td {
+    border: 0.05px solid black;
+}
+
+th {
+    background-color: #2a4c4c;
+    color: white; 
+}
+th.overallHead, th.seasonHead {
+    width: 0.1%;
+}
+
+th.titleHead, th.writtenByHead {
+    width: 5%;
+}
+th.directedByHead {
+    width: 2%;
+}
+
+th.airDateHead {
+    width: 2%;
+}
+th.viewersHead {
+    width: 1%;
+}
+
+.numOverall, .numInSeason, .directedBy, .writtenBy, .airDate, .usViewers {
+    text-align: center;
+}
+
+table {
+    width: 76%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    background-color: #f7f9fa;
+}
+
+.numOverall {
+    background-color: #e8eaef;
+}
+
+
+.year {
+    font-weight: bold;
+}
+
+.cupPic {
+    width: 600px;
+    height: 300px;
+}
+
+h1, h2, h3{
+    background-color: #ffffff;
+    width: 600px;
+}
+
+h2 {
+    margin-top: 40px; 
+}
+
+body {
+    /*margin: auto 25%; */
+    position: relative; 
+    font-size: 12px;
+    width: 100%;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    position: absolute; 
+    left: 0px;
+    width: 76%;
+}

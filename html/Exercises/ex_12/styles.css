@@ -1,0 +1,33 @@
+h1 {
+    color: white;
+    background-color: rgb(43, 182, 73);
+    max-width: max-content; 
+    padding: 0 13px;
+}
+
+body {
+    max-width: max-content;
+    background-color: rgb(219, 217, 230);
+}
+
+.favSuperHero {
+    border: 0.1em solid black;
+    padding-bottom: 17px;
+}
+
+.favVideoGame {
+    border: 0.1em solid black;
+    padding-bottom: 17px;
+}
+
+p {
+    font-style: italic;
+}
+
+legend {
+    font-style: bold;
+}
+
+fieldset {
+    border: 0.2em solid;
+}

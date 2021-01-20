@@ -1,0 +1,57 @@
+h1 {
+    color: white;
+    background-color: rgb(43, 182, 73);
+    max-width: max-content; 
+    padding: 0 13px;
+}
+
+body {
+    max-width: max-content;
+    background-color: rgb(219, 217, 230);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+}
+
+.flex-item-right {
+    margin-top: 9px;
+    padding-top: 4px;
+    border: 0.2em solid;
+    height: 40px;
+    font-weight: bold;
+
+}
+
+.favSuperHero {
+    border: 0.1em solid black;
+    padding-bottom: 17px;
+}
+
+.favVideoGame {
+    border: 0.1em solid black;
+    padding-bottom: 17px;
+}
+
+p {
+    font-style: italic;
+}
+
+legend {
+    font-style: bold;
+}
+
+fieldset {
+    border: 0.2em solid;
+    font-weight: bold;
+
+}
+
+.searchForm {
+    border: 1px solid black;
+}
+
+form {
+    display: inline;
+}

@@ -1,0 +1,173 @@
+/*Create a grid container*/
+#grid-container {
+    display: grid;
+    grid-template-rows: 600px 250px;
+    grid-auto-columns: 1fr; 
+}
+
+/*Give the starting and ending points of the two grids(main and footer) */
+.flex-container {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex; /*Make this a flex container */
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 70px;
+    justify-content: space-evenly;
+    
+}
+
+.footer {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    padding-bottom: 50px;
+}
+
+
+
+h1 {
+    background-color:  rgb(71, 208, 212);
+    color: white;
+    font-family: 'Courier New';
+    text-align: center;
+    word-spacing: -10px;
+    margin-top: 80px;
+}
+
+h2 {
+    background-color: rgb(24, 79, 230);
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(24, 79, 230);
+    padding: 15px;
+}
+
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li { /*Place the navigation elements(home, new, etc...) on the same line and space each element 30px apart */
+    display: inline;
+    margin: 40px;
+}
+
+nav li a:hover { /*Makes the text blue and underlines the text, when mouse hovers over the menu items */
+    text-decoration: underline;
+}
+
+nav li:hover {
+    background-color: rgb(71, 208, 212);
+    padding: 10px;
+}
+
+
+nav { 
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: white;
+}
+
+
+
+
+
+p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    background-color: rgb(71, 71, 67);
+}
+/*End of code to set up grip/layout and make each section a flex container */
+
+
+.left-flex {
+    margin-top: -28px;
+}
+
+
+
+
+
+
+/*Styling for footer section*/
+footer ul a, footer ul li{ /*Note, "Follow me" is not included in "footer ul a", hence the additional "footer ul li"  */
+    color: white;
+}
+
+
+
+footer ul {
+ font-size: x-small;
+ font-weight: bold; 
+}
+
+footer hr {
+    width: 93%;
+    margin-left: 20px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+/*End of section for footer styling */
+
+
+
+/*Styling for social media icons in the footer section */
+.fa {
+    padding: 2px;
+    font-size: 2px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+/*End of social media icon section*/
+
+.kim {
+    display:  none;
+}
+
+
+
+

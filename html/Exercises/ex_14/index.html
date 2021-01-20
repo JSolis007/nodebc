@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Create User</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Create User </h1>     
+    <hr>
+    <div class="flex-container"> 
+        <div class="flex-item-left">
+            <form action="./create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>User Form</legend>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" pattern="[a-zA-Z]+" title="Only letters allowed" placeholder="username" size="30" maxlength="12" required><br>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" pattern="[\d]{8,}" title="Only numbers allowed. Password must contain atleast 8 digits" placeholder="password" size="30" maxlength="8" required><br><br>
+                    <div class="birthday">
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" min="2000-01-02" max="1900-01-01"><br><br>
+                    </div>
+    
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                    </div>
+    
+                    <div class="siteUrl">
+                        <label for="siteUrl">Add your site URL:</label>
+                        <input type="url" id="siteUrl" name="siteUrl"><br><br>
+                    </div>
+    
+                    <div class="favSuperHero"> 
+                        <p>Select your favorite superhero</p>
+                        <input type="radio" id="superman" name="superheros" value="superman">
+                        <label for="superman">Superman</label><br>
+        
+                        <input type="radio" id="batman" name="superheros" value="batman" checked="checked">
+                        <label for="batman">Batman</label><br>
+        
+                        <input type="radio" id="wonder woman" name="superheros" value="wonder woman">
+                        <label for="wonder woman">Wonder Woman</label><br>
+        
+                        <input type="radio" id="flash" name="superheros" value="flash">
+                        <label for="flash">Flash</label><br>
+        
+                        <input type="radio" id="thor" name="superheros" value="thor">
+                        <label for="thor">Thor</label><br>
+        
+                        <input type="radio" id="hulk" name="superheros" value="hulk">
+                        <label for="hulk">Hulk</label><br>
+                    </div>
+    
+                    <br>
+                    <div class="favVideoGame"> 
+                        <p>Select your favorite video game</p>
+                        <input type="checkbox" id="fifa" name="videogames" value="fifa"> 
+                        <label for="fifa">Fifa</label><br>
+        
+                        <input type="checkbox" id="nhl" name="videogames" value="nhl"> 
+                        <label for="nhl">NHL</label><br>
+        
+                        <input type="checkbox" id="resident evil" name="videogames" value="resident evil"> 
+                        <label for="resident evil">Resident Evil</label><br>
+        
+                        <input type="checkbox" id="uncharted" name="videogames" value="uncharted"> 
+                        <label for="uncharted">Uncharted</label><br>
+        
+                        <input type="hidden" id="userid" name="userid" value="2300">
+                    </div>
+                
+                    <input type="image" src="img/register_button.png" width="100" height="60">
+                </fieldset>
+            </form>
+    
+        </div>
+        
+        <div class="flex-item-right">
+            <form action="https://www.google.ca/search">
+                <label for="q">Search Google:</label>
+                <input type="search" id="q" name="q">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
+

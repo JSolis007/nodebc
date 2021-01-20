@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Create User</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Create User</h1>     
+    <hr>
+
+    <div class="form">
+        <form action="#">
+
+            <div class="nameLabel">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="name"><br><br>
+            </div>
+
+            <label for="favMovie"></label>Your favorite superhero movie:</label>
+            <select id="favMovie" name="movies">
+                <option value="deadpool">Deadpool</option>
+                <option value="batman_vs_superman">Batman v Superman</option>
+                <option value="civil_war">Captain America: Civil War</option>
+                <option value="doctor_strange">Doctor Strange</option>
+                <option value="suicide_squad">Suicide Squad</option>
+                <option value="apocalypse">Xmen: Apocalypse</option>
+                <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+                <option value="justice_league">Justice League</option>
+                <option value="logan">Logan</option>
+                <option value="homecoming">Spider-Man: Homecoming</option>
+                <option value="Wonder Woman" selected>Wonder-woman</option>
+                <option value="thor_ragnarok">Thor: Ragnarok</option>
+                <option value="black_panther">Black Panther</option>
+            </select>
+            <br><br>
+
+            <label for="bio">Write your bio here:</label><br>
+            <textarea id="bio" name="bio" rows="10" cols="63">                
+            </textarea><br><br>
+
+            <label for="avart">Upload your avatar: </label>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+
+            <br><br>
+            <p>Start Over? Click here to clear the form:
+                <button class="clearForm">Clear Form</button>
+            </p>
+
+            <button class="addUser">Add new user</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
+

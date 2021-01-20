@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(154, 194, 231);
+    max-width: max-content;
+    font-weight: bold;
+}
+
+.nameLabel {
+    font-style: bold;
+}
+
+form {
+    border: 2px solid black;
+    max-width: max-content;
+    padding-right: 50px;
+    padding-left: 2px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.addUser {
+    background-color: rgb(236, 238, 127);
+}
+
+.clearForm {
+    background-color: grey;
+}

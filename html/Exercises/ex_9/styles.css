@@ -1,0 +1,46 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #4CAF50;
+}
+
+tr:nth-child(odd) {
+    background-color: #C0C0C0;
+}
+
+table {
+    width: 600px;
+    background-color: rgb(247, 245, 245);
+    border-spacing: 5px;
+}
+
+.year {
+    font-weight: bold;
+}
+
+.cupPic {
+    width: 600px;
+    height: 300px;
+}
+
+h1, h2, h3{
+    background-color: #C0C0C0;
+    width: 600px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+body {
+    position: relative;
+    margin: auto 25%;
+} 
+
+hr {
+    position: absolute;
+    width: 87%;
+    left: 0px;
+}

@@ -1,0 +1,23 @@
+.loginForm {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#login_submit_button {
+    background-color: rgb(60, 231, 60); 
+}
+
+body {
+    max-width: max-content;
+    margin: auto;
+    background-color: rgb(236, 233, 233);
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#login_submit_button:hover {
+    background-color: rgb(184, 248, 184); 
+}
