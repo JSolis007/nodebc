@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: grey;
+}
+
+/*This will override the previous h1 style */
+h1 {
+    color: blue
+}
