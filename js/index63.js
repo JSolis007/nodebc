@@ -1,5 +1,5 @@
-let year = 2017;
-let champion;
+let year = 2020;
+let champion = null;
 
 switch (year) {
   case 2017:
@@ -42,6 +42,6 @@ switch (year) {
     console.log('Sorry, please try a different year');  
 }
 
-if (year >= 2006 && year <= 2017) {
+if (champion !== null) {
   console.log(`${champion} was the ${year} NHL Champion`);
 }
