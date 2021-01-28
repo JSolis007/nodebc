@@ -1,14 +1,14 @@
-const animals = ['dog', 'duck', 'cow'];
-let animalCount = animals.unshift('cat');
+const iceCreamFlavors = [];
 
-console.log(animals); 
-// [ 'cat', 'dog', 'duck', 'cow' ]
+iceCreamFlavors.push('Durian');
+iceCreamFlavors.push('Coconut');
+iceCreamFlavors.push('Mango');
+iceCreamFlavors.push('Pineapple');
+iceCreamFlavors.push('Chocolate');
+iceCreamFlavors.push('Vanilla');
+iceCreamFlavors.push('Strawberry');
+iceCreamFlavors.push('Napolitan');
+iceCreamFlavors.push('Kimchi');
+iceCreamFlavors.push('Caramel');  
 
-console.log(animalCount); // 4
-
-animalCount = animals.unshift('elephant', 'dolphin');
-
-console.log(animals);
-// [ 'elephant', 'dolphin', 'dog', 'duck', 'cow', 'cat' ];
-
-console.log(animalCount); // 6
+console.log(iceCreamFlavors);
