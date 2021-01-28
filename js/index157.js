@@ -1,4 +1,6 @@
+const console = 'PS4';
 const games = [];
+
 
 games.push({
   name: 'Crash Bandicoot N. Sane Trilogy',
@@ -172,7 +174,8 @@ console: ${this.console}\n
   }  
 });
 
-
-games.map((game) => {
-  game.showDetail();
+const filteredGames = games.filter(function(game) {
+  return game.console === console;
 });
+
+console.log(filteredGames);
