@@ -1,4 +1,4 @@
-const console = 'PS4';
+const consoleType = 'XBOX';
 const games = [];
 
 
@@ -174,8 +174,16 @@ console: ${this.console}\n
   }  
 });
 
-const filteredGames = games.filter(function(game) {
-  return game.console === console;
+/*
+let filteredGames = games.filter(function(game) {
+  return game.console === consoleType;
+});
+
+console.log(filteredGames); */
+
+
+let filteredGames = games.filter( game => {
+  return game.console === consoleType;
 });
 
 console.log(filteredGames);
