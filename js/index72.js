@@ -6,3 +6,5 @@ while (index <= 13) {
   result += '*';
   index++;
 }
+
+
