@@ -20,6 +20,8 @@ function sort(number1, number2, number3, highToLow) {
   } 
 }
 
+
+
 sort(10, 8, 25);
 sort(100, 80, 25, true);
 sort(1, 8, 25);
@@ -29,5 +31,4 @@ sort(100, 1, 100);
 sort(50, 60, 60);
 sort(0, 0, 0);
 sort(10, 8, 25, true);
-
 
