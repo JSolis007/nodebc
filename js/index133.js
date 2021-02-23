@@ -24,3 +24,4 @@ mutants = mutants.filter((mutant) => mutant !== "Magneto");
 for (let i = 0; i < mutants.length; i++) {
   console.log(`${i}. ${mutants[i].toUpperCase()}`);
 }
+
