@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .striked {
+        text-decoration: line-through;
+      }
+
+      li {
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      window.onload = () => {
+        let ul = document.createElement("ul");
+        let weeklyChores = [
+          "Eat",
+          "Go to the bank",
+          "Sleep",
+          "Clean apartment",
+          "Walk dog",
+          "Grocerry shopping",
+          "Buy new clothes",
+          "Finish project",
+          "Work",
+          "Cook",
+        ];
+
+        weeklyChores.forEach((chore) => {
+          let li = document.createElement("li");
+          li.innerText = chore;
+          ul.appendChild(li);
+          document.body.appendChild(ul);
+
+          li.onclick = () => {
+            li.classList.toggle("striked");
+          };
+
+          console.log(li);
+        });
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

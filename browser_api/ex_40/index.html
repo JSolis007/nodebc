@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+      window.onload = () => {
+        let link = document.querySelector("a");
+        let count = 1;
+
+        link.onmouseover = () => {
+          console.log('testing');
+          if (count === 1) {
+            link.style.backgroundColor = "red";
+          } else if (count === 2) {
+            link.style.backgroundColor = "blue";
+          } else if (count === 3) {
+            link.style.backgroundColor = "green";
+          } else if (count === 4) {
+            link.style.backgroundColor = "gray";
+          } else {
+            link.style.backgroundColor = "white";
+          }
+          count++
+        };
+
+        link.onmouseout = () => {
+          alert(`The link background color is: ${link.style.backgroundColor}`);
+        }
+
+      };
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>

@@ -4,19 +4,14 @@
     <title>Events</title>
     <script>
       window.onload = () => {
-        let body = document.querySelector("body");
-        let div = document.querySelector("div");
+        let firstButton = document.getElementById("firstButton")
+        let div = document.querySelector("div")
+        let count = 0;
 
-        body.addEventListener("keypress", (e) => {
-          let keyCode = e.charCode;
-          let key = String.fromCharCode(keyCode);
-
-          div.innerText = `You pressed the ${key} key with the ${keyCode} code`;
-          div.style.fontSize = "20px";
-          div.style.color = "red";
-          div.style.fontFamily = "Arial";
-          div.style.paddingBottom = "20px";
-        });
+        firstButton.ondblclick = () => {
+          count++
+          div.innerText = `Total number of double clicks: ${count}`
+        }
       };
     </script>
   </head>
