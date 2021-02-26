@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elements</title>
+
+    <script>
+      window.onload = () => {
+        let list = document.querySelectorAll("li");
+        let firstList = list[0];
+        firstList.classList.add("orange");
+
+        let current = firstList;
+        while (current.nextElementSibling) {
+          current = current.nextElementSibling;
+          current.classList.add("orange");
+        }
+
+        list[2].classList.replace("orange", "red");
+        list[0].classList.replace("orange", "green");
+
+        console.log(list);
+      };
+    </script>
+    <style>
+      .red {
+        color: red;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .orange {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </body>
+</html>
