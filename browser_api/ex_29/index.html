@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <script>
+      window.onload = () => {
+        let ul = document.querySelector("ul");
+        let children = ul.children;
+        let count = 0;
+
+        while (count < 7) {
+          console.log("Removed: ", children.item(0));
+          ul.removeChild(children.item(0));
+          count++;
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Bannana</li>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Eggs</li>
+      <li>Tomatto</li>
+      <li>Lettuce</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>

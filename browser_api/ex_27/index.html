@@ -5,9 +5,27 @@
     <script>
       window.onload = () => {
         let body = document.querySelector("body");
-        let names = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+        function generateArrayOfNumbers(numbers) {
+          return [...Array(numbers).keys()].slice(1);
+        }
+
+        let numbers = generateArrayOfNumbers(101);
         let ul = document.createElement("ul");
 
+        numbers.forEach((number) => {
+          let li = document.createElement("li");
+          li.innerText = `Item ${number}`;
+
+          if (number % 2 === 0) {
+            li.style.color = "#ddd";
+          } else {
+            li.style.color = "#eee";
+          }
+
+          ul.appendChild(li)
+        });
+        document.body.appendChild(ul)
       };
     </script>
   </head>
