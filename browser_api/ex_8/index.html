@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let result = 0;
+      let count = 0;
+      alert("This program adds all the numbers you input");
+      while (confirm("Input another number?")) {
+        result += parseInt(prompt("Enter a number: "));
+        count++;
+      }
+      alert(`The result so far is ${result}`);
+      alert(`The user input is ${count} numbers`);
+      alert(`The average is ${result / count}`);
+    </script>
+  </head>
+  <body></body>
+</html>

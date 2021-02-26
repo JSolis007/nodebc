@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let username = prompt("Enter username:");
+      let password = prompt("Enter password:");
+      alert(`Welcome ${username}`)
+      setTimeout(() => {
+        let answer = confirm('Do you still want to be logged?')
+        if (answer) {
+          alert(`${username} your session has been restored`)
+        } else {
+          alert(`${username} your session has expired`)
+        }
+      }, 10000);
+    </script>
+  </head>
+  <body></body>
+</html>
