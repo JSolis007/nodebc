@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Properties</title>
+
+    <script>
+      window.onload = () => {
+        let form = document.querySelector("form");
+        let div = document.querySelector("div");
+
+        let formElements = form.elements;
+        let user = formElements[0];
+        let password = formElements[1];
+        let submit = formElements[2];
+
+        form.action = "test.html";
+
+        //show each form property
+        div.textContent = `action: ${form.action}
+        method: ${form.method}
+        enctype: ${form.enctype} 
+        name: ${form.name}`;
+      };
+    </script>
+  </head>
+  <body>
+    <form
+      action="save_user.html"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+      name="login"
+    >
+      <input type="text" id="username" name="username" />
+      <input type="password" id="pass" name="pass" />
+      <input type="submit" name="submit" value="Send" />
+    </form>
+    <div></div>
+  </body>
+</html>
