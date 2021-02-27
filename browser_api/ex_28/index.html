@@ -7,11 +7,15 @@
       window.onload = () => {
         let body = document.createElement("body");
         let ol = document.createElement("ol");
-        let count = 0;
+        let count = 1;
 
-        while (confirm("Enter more names?")) {
+        let button = document.createElement("button");
+        button.innerText = "Click to add another name"
+        document.body.appendChild(button);
+
+        button.onclick = () => {
           let name = prompt("Enter a name: ");
-          count++;
+
           let li = document.createElement("li");
           li.innerText = name;
 
@@ -23,7 +27,8 @@
 
           ol.appendChild(li);
           document.body.appendChild(ol);
-        }
+          count++;
+        };
       };
     </script>
   </head>
